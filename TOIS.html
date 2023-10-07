@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TOIS</title>
+</head>
+
+<style>
+    body 
+    {
+        background-color: #86b9b0;
+        font-family: Arial;
+        color: #042630;
+    }
+
+    h1 
+    {
+        font-size: 300%
+    }
+
+    p
+    {
+        font-size: 16px;
+    }
+
+    button
+    {
+        border-color: #d0d6d6;
+        border-width: 0.06cm;
+        border-radius: 8px;
+        color: #4c7273;  
+    }
+
+    input
+    {
+        border-color: #d0d6d6;
+        border-width: 0.06cm;
+        border-radius: 8px;
+        color: #4c7273;
+    }
+</style>
+
+<body>
+    <h1>TOIS</h1>
+    <hr>
+
+    <p>To begin studying, enter a quizlet link or create your own notecards here first.</p>
+
+    <p>
+        Term: <input id="userInput1">
+        <br> <br>
+        Definition: <input id="userInput2"> 
+    </p>
+    <button type="button" id="create" onClick="getInputs()">
+        Create notecards
+    </button>
+
+    <br> <br>
+
+    <embed src="https://quizlet.com/latest" style="width:600px; height: 400px;">
+
+    <p id="card1"></p>
+
+    <script>
+        function getInputs()
+        {
+            let userInput1 = document.querySelector("#userInput1");
+            let userInput2 = document.querySelector("#userInput2");
+            let card1 = document.querySelector("#card1");
+
+            card1.innerHTML = "Card 1:<br>" + userInput1.value + "-> " + userInput2.value;
+        }
+    </script>
+
+    <p>
+
+    </p>
+</body>
+</html>
