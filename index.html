@@ -67,7 +67,10 @@
             let userInput2 = document.querySelector("#userInput2");
             let card1 = document.querySelector("#card1");
 
-            card1.innerHTML = "Card 1:<br>" + userInput1.value + "-> " + userInput2.value;
+            if(userInput1 && userInput2 != null)
+            {
+                card1.innerHTML = "Card 1:<br>" + userInput1.value + "-> " + userInput2.value;
+            }
         }
     </script>
 
