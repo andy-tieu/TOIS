@@ -72,12 +72,17 @@
                 card1.innerHTML = "Card 1:<br>" + userInput1.value + "-> " + userInput2.value;
             }
         }
+
+        function game()
+        {
+            window.location.href = "https://sites.google.com/view/unblockgames-hackuta/home?authuser=0";
+        }
     </script>
 
     <embed src="https://quizlet.com/latest" style="width:600px; height: 400px;">
     <br> <br>
 
-    <button type="button" id="studyStart" onClick="">
+    <button type="button" id="studyStart" onClick="setTimeout(game, 3000)">
         Start Study Session
     </button>
 </body>
