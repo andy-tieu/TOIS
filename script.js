@@ -25,25 +25,37 @@ window.addEventListener("load", executeCodes);
 const timeH = document.querySelector('h1');
 let timeSecond = 5;
 
-displayTime(timeSecond) 
+// Call displayTime initially to set the initial time
+displayTime(timeSecond);
 
-const countDown = setInterval (()=>{
+// Create a function to start the countdown timer
+function startCountdown() {
+  const countDown = setInterval(() => {
     timeSecond--;
     displayTime(timeSecond);
-    if(timeSecond <= 0 || timeSecond<1){
-        endTime();
-        clearInterval(countDown);
-    }
-},1000)
 
-function displayTime(second){
-    const min = Math.floor(second / 60);
-    const sec = Math.floor(second % 60);
-    timeH.innerHTML= `${min<10 ? '0': ''}${min}:${sec<10 ? '0' :''}${sec}`
+    if (timeSecond <= 0) {
+      clearInterval(countDown);
+      endTime();
+    }
+  }, 1000);
 }
-function endTime(){
-    timeH.innerHTML = 'TIME FOR A BREAK!!'
-    window.location="https://sites.google.com/view/unblockgames-hackuta/home";
+
+// Call startCountdown to initiate the countdown timer
+startCountdown();
+
+function displayTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+
+  const display = `${minutes < 10 ? '0' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+  timeH.innerHTML = display;
+}
+
+function endTime() {
+  timeH.innerHTML = 'TIME FOR A BREAK!!';
+  // Redirect to a website
+  window.location.href = 'https://sites.google.com/view/unblockgames-hackuta/home';
 }
 
 try {
