@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>TOIS</title>
+    <link rel="icon" type="image/x-icon" href="./assets/brainControllerLogo.png">
 </head>
 
 <style>
@@ -11,12 +12,14 @@
     {
         background-color: #86b9b0;
         font-family: Arial;
+        text-align: center;
         color: #042630;
     }
 
     h1 
     {
-        font-size: 300%
+        font-size: 300%;
+        text-align: center;
     }
 
     p
@@ -42,7 +45,7 @@
 </style>
 
 <body>
-    <h1><img src="/brainControllerLogo.png"> TOIS</h1>
+    <h1><img src="./assets/brainControllerLogo.png" alt="Brain and controller logo" style="width:64px;height:64px;"> TOIS</h1>
     <hr>
 
     <p>To begin studying, enter a quizlet link or create your own notecards here first.</p>
@@ -77,16 +80,21 @@
         {
             location.replace = ("https://sites.google.com/view/unblockgames-hackuta/home?authuser=0>");
         }
+
+        function redirect()
+        {
+            location.href = "./public/redirect.html";
+        };
     </script>
 
     <embed src="https://quizlet.com/latest" style="width:600px; height: 400px;">
     <br> <br>
 
-    <button type="button" id="studyStart" onClick="setTimeout(game, 10000);">
+    <button type="button" id="studyStart" onClick="setTimeout(game(), 5000);">
         Start Study Session
     </button>
 
-    <button type="button" href="/redirect.html">Test</button>
+    <button type="button" id="test" onClick="redirect()">Redirect</button>
 </body>
 <!-- Cookie Banner -->
 <head>
