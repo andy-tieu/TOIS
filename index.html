@@ -78,17 +78,19 @@
             location.replace = ("https://sites.google.com/view/unblockgames-hackuta/home?authuser=0>");
         }
 
-        document.getElementById("test").onclick = function () {
-        location.href = "./public/redirect.html"};
+        function redirect()
+        {
+            location.href = "./public/redirect.html";
+        };
     </script>
 
     <embed src="https://quizlet.com/latest" style="width:600px; height: 400px;">
     <br> <br>
 
-    <button type="button" id="studyStart" onClick="setTimeout(game, 5000);">
+    <button type="button" id="studyStart" onClick="setTimeout(game(), 5000);">
         Start Study Session
     </button>
 
-    <button id="test">Redirect</button>
+    <button type="button" id="test" onClick="redirect()">Redirect</button>
 </body>
 </html>
