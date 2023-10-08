@@ -1,5 +1,5 @@
 const timeH = document.getElementById('timer');
-let timeSecond = 10;
+let timeSecond = 1200;
 
 displayTime(timeSecond) 
 
