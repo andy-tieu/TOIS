@@ -19,5 +19,5 @@ function displayTime(second){
 }
 function endTime(){
     timeH.innerHTML = 'TIME FOR A BREAK!!'
-    window.location="https://sites.google.com/view/unblockgames-hackuta/home";
+    location.href ="./public/games.html";
 }

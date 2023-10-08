@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TOIS</title>
+    <link rel="icon" type="image/x-icon" href="./assets/brainControllerLogo.png">
+</head>
+
+    <!-- In-line CSS to follow Teal Lightning color palette from https://paperheartdesign.com/blog/color-palette-peaceful-palettes -->
+<style>
+    header
+    {
+        background-color: #4c7273;
+        padding: 30px;
+        text-align: center;
+        font-size: 200%;
+    }
+
+    body 
+    {
+            
+        background-color: #86b9b0;
+        font-family: Arial;
+        text-align: center;
+        color: #042630;
+    }
+
+    hr
+    {
+        color:#d0d6d6;
+    }
+
+    p
+    {
+        font-size: 16px;
+    }
+
+    button
+    {
+        border-color: #d0d6d6;
+        border-width: 0.06cm;
+        border-radius: 8px;
+        padding: 3px 3px;
+        color: #4c7273;
+        cursor: pointer;
+    }
+
+    .buttongrp:hover
+    {
+        background-color: #bedad5;
+    }
+
+    input
+    {
+        border-color: #d0d6d6;
+        border-width: 0.06cm;
+        border-radius: 8px;
+        color: #4c7273;
+    }
+
+    footer
+    {
+        background-color: #4c7273;
+        padding: 30px;
+        text-align: center;
+        font-size: 200%;
+    }
+</style>
+<body>
+    <header>
+        <h1><img src="./assets/brainControllerLogo.png" alt="Brain and controller logo" style="width:64px;height:64px;"> TOIS</h1>
+    </header>
+    <hr>
+    <br>
+
+    <button type="button" class=".buttongrp" onClick="game1()">
+        Game 1
+    </button>
+    <button type="button" class=".buttongrp" onClick="game2()">
+        Game 2
+    </button>
+    <button type="button" class=".buttongrp" onClick="game3()">
+        Game 3
+    </button>
+    <br> <br>
+
+    <button type="button" class=".buttongrp" onClick="game4()">
+        Game 4
+    </button>
+    <button type="button" class=".buttongrp" onClick="game5()">
+        Game 5
+    </button>
+    <button type="button" class=".buttongrp" onClick="game6()">
+        Game 6
+    </button>
+    <br> <br>
+
+    <button type="button" class=".buttongrp" onClick="game7()">
+        Game 7
+    </button>
+    <button type="button" class=".buttongrp" onClick="game8()">
+        Game 8
+    </button>
+    <button type="button" class=".buttongrp" onClick="game9()">
+        Game 9
+    </button>
+
+    <script>
+        function game1() {location.href = "./public/game1.html";}
+        function game2() {location.href = "./public/game2.html";}
+        function game3() {location.href = "./public/game3.html";}
+        function game4() {location.href = "./public/game4.html";}
+        function game5() {location.href = "./public/game5.html";}
+        function game6() {location.href = "./public/game6.html";}
+        function game7() {location.href = "./public/game7.html";}
+        function game8() {location.href = "./public/game8.html";}
+        function game9() {location.href = "./public/game9.html";}
+    </script>
+    <br>
+    <hr>
+
+    <footer>
+        <p>TOIS&#169; 2023 &nbsp Developed by Andy Tieu & Ann Dinh</p>    
+    </footer>
+</body>
+</html>
