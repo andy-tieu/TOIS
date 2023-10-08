@@ -26,6 +26,11 @@
         color: #042630;
     }
 
+    hr
+    {
+        color:#d0d6d6;
+    }
+
     p
     {
         font-size: 16px;
@@ -36,8 +41,14 @@
         border-color: #d0d6d6;
         border-width: 0.06cm;
         border-radius: 8px;
-        padding: 3px;
-        color: #4c7273;  
+        padding: 3px 3px;
+        color: #4c7273;
+        cursor: pointer;
+    }
+
+    .buttongrp:hover
+    {
+        background-color: #bedad5;
     }
 
     input
@@ -47,6 +58,14 @@
         border-radius: 8px;
         color: #4c7273;
     }
+
+    footer
+    {
+        background-color: #4c7273;
+        padding: 30px;
+        text-align: center;
+        font-size: 200%;
+    }
 </style>
 <body>
     <header>
@@ -55,35 +74,35 @@
     <hr>
     <br>
 
-    <button type="button" id="studyStart" onClick="game1()">
+    <button type="button" class=".buttongrp" onClick="game1()">
         Game 1
     </button>
-    <button type="button" id="studyStart" onClick="game2()">
+    <button type="button" class=".buttongrp" onClick="game2()">
         Game 2
     </button>
-    <button type="button" id="studyStart" onClick="game3()">
+    <button type="button" class=".buttongrp" onClick="game3()">
         Game 3
     </button>
     <br> <br>
 
-    <button type="button" id="studyStart" onClick="game4()">
+    <button type="button" class=".buttongrp" onClick="game4()">
         Game 4
     </button>
-    <button type="button" id="studyStart" onClick="game5()">
+    <button type="button" class=".buttongrp" onClick="game5()">
         Game 5
     </button>
-    <button type="button" id="studyStart" onClick="game6()">
+    <button type="button" class=".buttongrp" onClick="game6()">
         Game 6
     </button>
     <br> <br>
 
-    <button type="button" id="studyStart" onClick="game7()">
+    <button type="button" class=".buttongrp" onClick="game7()">
         Game 7
     </button>
-    <button type="button" id="studyStart" onClick="game8()">
+    <button type="button" class=".buttongrp" onClick="game8()">
         Game 8
     </button>
-    <button type="button" id="studyStart" onClick="game9()">
+    <button type="button" class=".buttongrp" onClick="game9()">
         Game 9
     </button>
 
@@ -98,5 +117,11 @@
         function game8() {location.href = "./public/game8.html";}
         function game9() {location.href = "./public/game9.html";}
     </script>
+    <br>
+    <hr>
+
+    <footer>
+        <p>TOIS&#169; 2023 &nbsp Developed by Andy Tieu & Ann Dinh</p>    
+    </footer>
 </body>
 </html>
