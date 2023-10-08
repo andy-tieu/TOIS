@@ -1,4 +1,4 @@
-const timeH = document.getElementById('timer');
+const timeH = document.getElementById('10mintimer');
 let timeSecond = 10;
 
 displayTime(timeSecond) 
