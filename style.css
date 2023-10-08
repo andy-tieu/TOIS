@@ -8,7 +8,7 @@
 }
 body {
   min-height: 100vh;
-  background-color:#86b9b0;
+  background-color: #4C7273;
   ;
 }
 .wrapper {
@@ -32,11 +32,11 @@ body {
   column-gap: 15px;
 }
 header i {
-  color: #86b9b0;
+  color: #4C7273;
   font-size: 32px;
 }
 header h2 {
-  color: #86b9b0;
+  color: #4C7273;
   font-weight: 500;
 }
 .wrapper .data {
@@ -47,7 +47,7 @@ header h2 {
   font-size: 16px;
 }
 .data p a {
-  color: #86b9b0;
+  color: #4C7273;
   text-decoration: none;
 }
 .data p a:hover {
@@ -65,7 +65,7 @@ header h2 {
   color: #fff;
   padding: 8px 0;
   border-radius: 4px;
-  background: #86b9b0;
+  background: #4C7273;
   cursor: pointer;
   width: calc(100% / 2 - 10px);
   transition: all 0.2s ease;
@@ -74,11 +74,11 @@ header h2 {
   background-color: #042630;
 }
 #declineBtn {
-  border: 2px solid #86b9b0;
+  border: 2px solid #4C7273;
   background-color: #fff;
-  color: #86b9b0;
+  color: #4C7273;
 }
 #declineBtn:hover {
-  background-color: #86b9b0;
+  background-color: #4C7273;
   color: #fff;
 }
