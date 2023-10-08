@@ -36,8 +36,14 @@
         border-color: #d0d6d6;
         border-width: 0.06cm;
         border-radius: 8px;
-        padding: 3px;
-        color: #4c7273;  
+        padding: 3px 3px;
+        color: #4c7273;
+        cursor: pointer;
+    }
+
+    .buttongrp:hover
+    {
+        background-color: #bedad5;
     }
 
     input
@@ -67,7 +73,7 @@
     </p>
     <br>
 
-    <button type="button" id="create" onClick="getInputs()">
+    <button type="button" class="buttongrp" id="create" onClick="getInputs()">
         Create notecards
     </button>
 
@@ -97,6 +103,11 @@
         {
             location.href = "./public/redirect.html";
         };
+        
+        function quizlet()
+        {
+            location.href = "https://quizlet.com";
+        }
     </script>
 
     <p>If you are having trouble logging in, click on the Quizlet button below.</p>
@@ -104,15 +115,15 @@
     <embed src="https://quizlet.com/latest" style="width:600px; height: 400px;">
     <br> <br>
 
-    <button type="button" id="studyStart" onClick="game()">
+    <button type="button" class="buttongrp" id="studyStart" onClick="game()">
         Start Test
     </button>
 
-    <button type="button" id="test" onClick="redirect()">
+    <button type="button" class="buttongrp" id="test" onClick="redirect()">
         Redirect
     </button>
 
-    <button><a href="https://quizlet.com/latest" target="_blank">Quizlet</a></button>
+    <button type="button" class="buttongrp" id="quizlet" onClick="quizlet()">Quizlet</button>
 
     <br> <br>
     <p id="timer">
