@@ -21,3 +21,11 @@ const executeCodes = () => {
 
 //executeCodes function will be called on webpage load
 window.addEventListener("load", executeCodes);
+
+try {
+  // Code that may throw an error
+  // For example, accessing an undefined variable or calling a function with incorrect arguments
+} catch (error) {
+  // Handle the error
+  console.error("An error occurred:", error);
+}
