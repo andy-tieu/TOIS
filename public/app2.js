@@ -1,5 +1,5 @@
 const timeH = document.getElementById('10mintimer');
-let timeSecond = 10;
+let timeSecond = 600;
 
 displayTime(timeSecond) 
 
