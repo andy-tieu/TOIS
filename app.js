@@ -1,4 +1,4 @@
-const timeH = document.querySelector('h1');
+const timeH = document.getElementById('timer');
 let timeSecond = 45;
 
 displayTime(timeSecond) 
