@@ -8,7 +8,7 @@
 }
 body {
   min-height: 100vh;
-  background-color: #4070f4;
+  background-color: #d0d6d6;
 }
 .wrapper {
   position: fixed;
@@ -31,11 +31,11 @@ body {
   column-gap: 15px;
 }
 header i {
-  color: ##d0d6d6;
+  color: #d0d6d6;
   font-size: 32px;
 }
 header h2 {
-  color: ##d0d6d6;
+  color: #d0d6d6;
   font-weight: 500;
 }
 .wrapper .data {
@@ -70,12 +70,12 @@ header h2 {
   transition: all 0.2s ease;
 }
 .buttons #acceptBtn:hover {
-  background-color: #034bf1;
+  background-color: #03f18244;
 }
 #declineBtn {
   border: 2px solid #d0d6d6;
   background-color: #fff;
-  color: #4070f4;
+  color: #d0d6d6;
 }
 #declineBtn:hover {
   background-color: #d0d6d6;
