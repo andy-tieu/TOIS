@@ -1,16 +1,5 @@
 *{
   padding: 0;
   margin: 0;
-  
-}
-section{
-  height: 100vh;
-  width: 100%;
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-}
-h1{
-  font-family: 'Times New Roman';
-  font-size: 20px
+  box-sizing:border-box;
 }
