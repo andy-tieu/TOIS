@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <script>
+        var seconds=0;
+        function displayseconds()
+        {
+            seconds +=1;
+            document.getElementById("secondsdisplay").innerText = "This Page Will Be Redirected In "+seconds+" Seconds ...";
+        }
+        setInterval (displayseconds, 1000);
+
+        function redirectpage()
+        {
+            window.location="https://sites.google.com/view/unblockgames-hackuta/home?authuser=0";
+        }
+        setTimeout('redirectpage()',4000);
+    </script>
+</head>
+<body>
+    <center>
+        <h1> Time to Take a Break </h1>
+        <h2> Redirecting to the games page</h2>
+    </hr>
+    <div id = "secondsdisplay"></div>
+    </center>
+</body>
+</html>
