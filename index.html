@@ -77,6 +77,9 @@
         {
             location.replace = ("https://sites.google.com/view/unblockgames-hackuta/home?authuser=0>");
         }
+
+        document.getElementById("test").onclick = function () {
+        location.href = "./redirect.html"};
     </script>
 
     <embed src="https://quizlet.com/latest" style="width:600px; height: 400px;">
@@ -86,6 +89,6 @@
         Start Study Session
     </button>
 
-    <a href="/redirect.html"><button type="button">Test</button></a>
+    <button id="test">Redirect</button>
 </body>
 </html>
