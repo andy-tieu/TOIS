@@ -1,4 +1,4 @@
-const timeH = document.getElementById('timer');
+const timeH = document.getElementById('10mintimer');
 let timeSecond = 10;
 
 displayTime(timeSecond) 
@@ -19,5 +19,5 @@ function displayTime(second){
 }
 function endTime(){
     timeH.innerHTML = 'TIME FOR A BREAK!!'
-    location.href ="./public/games.html";
+    location.href ="../index.html";
 }
