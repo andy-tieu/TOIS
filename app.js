@@ -19,5 +19,5 @@ function displayTime(second){
 }
 function endTime(){
     timeH.innerHTML = 'TIME FOR A BREAK!!'
-    location.href ="./public/games.html";
+    location.href ="./games.html";
 }
