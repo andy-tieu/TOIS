@@ -1,5 +1,5 @@
 const timeH = document.querySelector('h1');
-let timeSecond = 1200;
+let timeSecond = 5;
 
 displayTime(timeSecond) 
 
